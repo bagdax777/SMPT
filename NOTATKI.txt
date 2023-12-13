@@ -1,0 +1,8 @@
+dodawanie api key do aplikacji nie dzialalo na chrome a na operze poszlo
+
+api key znajduje sie w AndroidManifest.xml i zostal zdefiniowany w strings.xml
+pozwolenie na lokalizacje <users-permission> w manifest
+
+
+
+https://www.youtube.com/watch?v=pOKPQ8rYe6g&list=PLHQRWugvckFrWppucVnQ6XhiJyDbaCU79
