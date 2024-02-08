@@ -1,3 +1,3 @@
 Tourist Attraction(brak polski, płatna) - https://rapidapi.com/ptwebsolution/api/tourist-attraction
 Travel Places(brak zdjęć, malo miejsc) - https://rapidapi.com/sharemap-sharemap-default/api/travel-places
-https://rapidapi.com/apidojo/api/travel-advisor() - https://rapidapi.com/apidojo/api/travel-advisor  
+travel-advisor() - https://rapidapi.com/apidojo/api/travel-advisor  
