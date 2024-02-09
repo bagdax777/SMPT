@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private LocationCallback locationCallback;
     private boolean myLocationButtonClicked = false;
     private Location lastKnownLocation;
+    private boolean isLocationUpdateRequested = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void getLastKnownLocationAndFetchPlaces() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            // Dodaj toast informujący o rozpoczęciu pobierania lokalizacji
+            Toast.makeText(this, "Pobieranie lokalizacji...", Toast.LENGTH_SHORT).show();
+
             fusedLocationProviderClient.getLastLocation()
                     .addOnSuccessListener(this, location -> {
                         if (location != null) {
@@ -67,7 +71,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 moveToLocationAndFetchPlaces(new LatLng(location.getLatitude(), location.getLongitude()));
                                 myLocationButtonClicked = false;
                             } else {
-                                new MyAsyncTask(MainActivity.this).execute(getString(R.string.my_map_api_key), String.valueOf(location.getLatitude()), String.valueOf(location.getLongitude()));
+                                if (!isLocationUpdateRequested) {
+                                    Log.d("MainActivity", "Uruchamianie MyAsyncTask do pobrania danych z Google Places API.");
+                                    new MyAsyncTask(MainActivity.this).execute(getString(R.string.my_map_api_key), String.valueOf(location.getLatitude()), String.valueOf(location.getLongitude()));
+                                    isLocationUpdateRequested = true;
+                                }
                             }
                         } else {
                             Log.d("MainActivity", "Nie można uzyskać ostatniej lokalizacji.");
@@ -85,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     .build();
 
             mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-            new MyAsyncTask(MainActivity.this).execute(getString(R.string.my_map_api_key), String.valueOf(latLng.latitude), String.valueOf(latLng.longitude));
         }
     }
 
@@ -135,7 +142,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
                 return false;
             });
-            startLocationUpdates();
+
+            mMap.setOnCameraMoveStartedListener(reason -> {
+                if (reason == GoogleMap.OnCameraMoveStartedListener.REASON_GESTURE) {
+                    stopLocationUpdates();
+                }
+            });
         } else {
             requestLocationPermission();
         }
@@ -192,5 +204,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         int numberOfPlaces = output.size();
         Toast.makeText(this, "Znaleziono " + numberOfPlaces + " obiektów.", Toast.LENGTH_SHORT).show();
+
+        startLocationUpdates();
     }
 }

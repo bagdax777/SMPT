@@ -2,6 +2,7 @@ package com.smpt;
 
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -29,6 +30,7 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
 
     @Override
     protected ArrayList<Place> doInBackground(String... params) {
+        Log.d(TAG, "Rozpoczynanie pobierania danych z Google Places API.");
         String apiKey = params[0];
         double latitude = Double.parseDouble(params[1]);
         double longitude = Double.parseDouble(params[2]);
@@ -62,14 +64,12 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
                 double lng = placeJson.getJSONObject("geometry").getJSONObject("location").getDouble("lng");
                 String photoReference = null;
 
-                // Check if photos array is present and not empty
                 if (placeJson.has("photos") && !placeJson.getJSONArray("photos").isNull(0)) {
                     JSONArray photosArray = placeJson.getJSONArray("photos");
                     JSONObject photoObject = photosArray.getJSONObject(0);
                     photoReference = photoObject.getString("photo_reference");
                 }
 
-                // Construct photo URL if photo reference is available
                 String photoUrl = null;
                 if (photoReference != null) {
                     photoUrl = "https://maps.googleapis.com/maps/api/place/photo?" +
@@ -79,12 +79,12 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
                 }
 
                 places.add(new Place(name, lat, lng, photoUrl));
-                Log.d(TAG, "TESTOWE: " + photoUrl);
             }
 
+            Log.d("MOJ2", "Zakończono pobieranie danych. Liczba pobranych miejsc: " + places.size());
             urlConnection.disconnect();
         } catch (Exception e) {
-            Log.e(TAG, "Error parsing JSON response: ", e);
+            Log.e("MOJ2", "Error parsing JSON response: ", e);
         }
 
         return places;
@@ -92,7 +92,7 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
 
     @Override
     protected void onPostExecute(ArrayList<Place> result) {
-        super.onPostExecute(result);
+        Log.d("MOJ2", "Zakończono procesowanie danych. Liczba przekazanych miejsc: " + result.size());
         delegate.processFinish(result);
     }
 }
