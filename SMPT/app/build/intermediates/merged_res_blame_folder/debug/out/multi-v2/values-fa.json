@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smpt.app-mergeDebugResources-30:/values-fa/values-fa.xml",
+            "outputFile": "com.smpt.app-mergeDebugResources-31:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\fa920612e310022d7718d021e31c857f\\transformed\\material-1.9.0\\res\\values-fa\\values-fa.xml",

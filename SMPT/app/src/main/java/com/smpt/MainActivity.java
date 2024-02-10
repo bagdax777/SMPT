@@ -2,6 +2,8 @@ package com.smpt;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
@@ -9,10 +11,14 @@ import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.CustomTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -22,6 +28,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -58,9 +65,54 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
+    private void requestLocationPermission() {
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_PERMISSION_CODE);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == FINE_LOCATION_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                if (mMap != null) {
+                    mMap.setMyLocationEnabled(true);
+                    mMap.getUiSettings().setMyLocationButtonEnabled(true);
+                }
+                createLocationRequest();
+                createLocationCallback();
+                startLocationUpdates();
+            } else {
+                Toast.makeText(this, "Location permission is denied, please allow the permission", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private void createLocationRequest() {
+        locationRequest = LocationRequest.create();
+        locationRequest.setInterval(10000);
+        locationRequest.setFastestInterval(5000);
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    }
+
+    private void createLocationCallback() {
+        locationCallback = new LocationCallback() {
+            @Override
+            public void onLocationResult(LocationResult locationResult) {
+                if (locationResult != null) {
+                    for (Location location : locationResult.getLocations()) {
+                        lastKnownLocation = location;
+                        if (myLocationButtonClicked) {
+                            moveToLocationAndFetchPlaces(new LatLng(location.getLatitude(), location.getLongitude()));
+                            myLocationButtonClicked = false;
+                        }
+                    }
+                }
+            }
+        };
+    }
+
     private void getLastKnownLocationAndFetchPlaces() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            // Dodaj toast informujący o rozpoczęciu pobierania lokalizacji
             Toast.makeText(this, "Pobieranie lokalizacji...", Toast.LENGTH_SHORT).show();
 
             fusedLocationProviderClient.getLastLocation()
@@ -96,67 +148,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
-    private void createLocationRequest() {
-        locationRequest = LocationRequest.create();
-        locationRequest.setInterval(10000);
-        locationRequest.setFastestInterval(5000);
-        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-    }
-
-    private void createLocationCallback() {
-        locationCallback = new LocationCallback() {
-            @Override
-            public void onLocationResult(LocationResult locationResult) {
-                if (locationResult != null) {
-                    for (Location location : locationResult.getLocations()) {
-                        lastKnownLocation = location;
-                        if (myLocationButtonClicked) {
-                            moveToLocationAndFetchPlaces(new LatLng(location.getLatitude(), location.getLongitude()));
-                            myLocationButtonClicked = false;
-                        }
-                    }
-                }
-            }
-        };
-    }
-
-    private void requestLocationPermission() {
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_PERMISSION_CODE);
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            mMap.setMyLocationEnabled(true);
-            mMap.getUiSettings().setMyLocationButtonEnabled(true);
-            mMap.getUiSettings().setScrollGesturesEnabled(true);
-            mMap.getUiSettings().setTiltGesturesEnabled(true);
-            mMap.getUiSettings().setRotateGesturesEnabled(true);
-            mMap.getUiSettings().setIndoorLevelPickerEnabled(true);
-            mMap.getUiSettings().setMapToolbarEnabled(false);
-            mMap.setOnMyLocationButtonClickListener(() -> {
-                myLocationButtonClicked = true;
-                if (lastKnownLocation != null) {
-                    moveToLocationAndFetchPlaces(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()));
-                }
-                return false;
-            });
-
-            mMap.setOnCameraMoveStartedListener(reason -> {
-                if (reason == GoogleMap.OnCameraMoveStartedListener.REASON_GESTURE) {
-                    stopLocationUpdates();
-                }
-            });
-        } else {
-            requestLocationPermission();
-        }
-    }
-
     private void startLocationUpdates() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             fusedLocationProviderClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
         }
+    }
+
+    private void stopLocationUpdates() {
+        fusedLocationProviderClient.removeLocationUpdates(locationCallback);
     }
 
     @Override
@@ -173,25 +172,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         stopLocationUpdates();
     }
 
-    private void stopLocationUpdates() {
-        fusedLocationProviderClient.removeLocationUpdates(locationCallback);
-    }
-
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == FINE_LOCATION_PERMISSION_CODE) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                if (mMap != null) {
-                    mMap.setMyLocationEnabled(true);
-                    mMap.getUiSettings().setMyLocationButtonEnabled(true);
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            mMap.setMyLocationEnabled(true);
+            mMap.getUiSettings().setMyLocationButtonEnabled(true);
+            mMap.setOnMyLocationButtonClickListener(() -> {
+                myLocationButtonClicked = true;
+                if (lastKnownLocation != null) {
+                    moveToLocationAndFetchPlaces(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()));
                 }
-                createLocationRequest();
-                createLocationCallback();
-                startLocationUpdates();
-            } else {
-                Toast.makeText(this, "Location permission is denied, please allow the permission", Toast.LENGTH_SHORT).show();
-            }
+                return false;
+            });
+        } else {
+            requestLocationPermission();
         }
     }
 
@@ -199,11 +194,32 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void processFinish(ArrayList<Place> output) {
         for (Place place : output) {
             LatLng placeLocation = new LatLng(place.getLatitude(), place.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(placeLocation).title(place.getName()));
+            String photoUrl = place.getPhotoUrl();
+
+            if (photoUrl != null && !photoUrl.isEmpty()) {
+                Glide.with(this)
+                        .asBitmap()
+                        .load(photoUrl)
+                        .into(new CustomTarget<Bitmap>() {
+                            @Override
+                            public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                                mMap.addMarker(new MarkerOptions()
+                                        .position(placeLocation)
+                                        .icon(BitmapDescriptorFactory.fromBitmap(resource))
+                                        .title(place.getName()));
+                            }
+
+                            @Override
+                            public void onLoadCleared(@Nullable Drawable placeholder) {
+                            }
+                        });
+            } else {
+                mMap.addMarker(new MarkerOptions().position(placeLocation).title(place.getName()));
+            }
         }
 
         int numberOfPlaces = output.size();
-        Toast.makeText(this, "Znaleziono " + numberOfPlaces + " obiektów.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Znaleziono " + numberOfPlaces + " miejsc.", Toast.LENGTH_SHORT).show();
 
         startLocationUpdates();
     }

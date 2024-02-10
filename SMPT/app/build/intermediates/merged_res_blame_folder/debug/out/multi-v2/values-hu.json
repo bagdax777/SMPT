@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smpt.app-mergeDebugResources-30:/values-hu/values-hu.xml",
+            "outputFile": "com.smpt.app-mergeDebugResources-31:/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\8a2b86b2bd025d018a27c21bf8893275\\transformed\\play-services-base-18.0.1\\res\\values-hu\\values.xml",

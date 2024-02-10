@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smpt.app-mergeDebugResources-30:/values-port/values-port.xml",
+            "outputFile": "com.smpt.app-mergeDebugResources-31:/values-port/values-port.xml",
             "map": [
                 {
                     "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\ff3e7a6cbd6877b655429719bd7e51c8\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",

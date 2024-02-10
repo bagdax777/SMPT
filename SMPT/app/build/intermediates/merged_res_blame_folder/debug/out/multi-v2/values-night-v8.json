@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smpt.app-mergeDebugResources-30:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.smpt.app-mergeDebugResources-31:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\fa920612e310022d7718d021e31c857f\\transformed\\material-1.9.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\socha\\OneDrive\\Desktop\\SMPT\\SMPT\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\socha\\Desktop\\SMPT\\SMPT\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

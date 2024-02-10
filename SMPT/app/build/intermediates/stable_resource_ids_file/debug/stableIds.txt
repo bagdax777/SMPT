@@ -866,6 +866,7 @@ com.smpt:macro/m3_comp_time_picker_period_selector_unselected_pressed_state_laye
 com.smpt:style/ThemeOverlay.Material3.DynamicColors.Dark = 0x7f110294
 com.smpt:style/Widget.Material3.MaterialCalendar.HeaderSelection = 0x7f110395
 com.smpt:style/Widget.Material3.BottomNavigationView.ActiveIndicator = 0x7f110340
+com.smpt:id/glide_custom_view_target_tag = 0x7f08020b
 com.smpt:color/tooltip_background_dark = 0x7f050458
 com.smpt:style/ThemeOverlay.Material3.Button.IconButton.Filled = 0x7f110286
 com.smpt:macro/m3_comp_time_picker_period_selector_selected_focus_state_layer_color = 0x7f0c0135

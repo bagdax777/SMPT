@@ -79,6 +79,7 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
                 }
 
                 places.add(new Place(name, lat, lng, photoUrl));
+                Log.d("MOJ2", photoUrl);
             }
 
             Log.d("MOJ2", "Zakończono pobieranie danych. Liczba pobranych miejsc: " + places.size());
