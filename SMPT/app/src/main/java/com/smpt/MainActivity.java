@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean myLocationButtonClicked = false;
     private Location lastKnownLocation;
     private boolean isLocationUpdateRequested = false;
+    private boolean isTrackingLocation = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,13 +99,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(LocationResult locationResult) {
-                if (locationResult != null) {
+                if (locationResult != null && isTrackingLocation) {
                     for (Location location : locationResult.getLocations()) {
-                        lastKnownLocation = location;
-                        if (myLocationButtonClicked) {
-                            moveToLocationAndFetchPlaces(new LatLng(location.getLatitude(), location.getLongitude()));
-                            myLocationButtonClicked = false;
-                        }
+                        CameraPosition cameraPosition = new CameraPosition.Builder()
+                                .target(new LatLng(location.getLatitude(), location.getLongitude())) // Ustawia pozycję
+                                .zoom(18) // Ustawia poziom zoomu
+                                .tilt(60) // Ustawia kąt nachylenia
+                                .build(); // Buduje nową pozycję kamery
+                        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                     }
                 }
             }
@@ -178,12 +180,25 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
             mMap.getUiSettings().setMyLocationButtonEnabled(true);
+
             mMap.setOnMyLocationButtonClickListener(() -> {
-                myLocationButtonClicked = true;
+                isTrackingLocation = true; // Włącz śledzenie lokalizacji
                 if (lastKnownLocation != null) {
-                    moveToLocationAndFetchPlaces(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()));
+                    CameraPosition cameraPosition = new CameraPosition.Builder()
+                            .target(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude())) // Ustawia pozycję
+                            .zoom(18) // Ustawia poziom zoomu
+                            .tilt(60) // Ustawia kąt nachylenia kamery
+                            .build(); // Buduje nową pozycję kamery
+                    mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 }
-                return false;
+                startLocationUpdates(); // Rozpocznij aktualizacje lokalizacji
+                return true;
+            });
+
+            mMap.setOnCameraMoveStartedListener(reason -> {
+                if (reason == GoogleMap.OnCameraMoveStartedListener.REASON_GESTURE) {
+                    isTrackingLocation = false; // Wyłącz śledzenie lokalizacji gdy użytkownik przesuwa mapę
+                }
             });
         } else {
             requestLocationPermission();
