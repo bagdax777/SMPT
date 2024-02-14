@@ -31,11 +31,16 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.smpt.MyAsyncTask;
+import com.smpt.Place;
+import com.smpt.R;
+import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, MyAsyncTask.AsyncResponse {
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, MyAsyncTask.AsyncResponse, GoogleMap.OnMarkerClickListener {
 
     private final int FINE_LOCATION_PERMISSION_CODE = 1;
     private GoogleMap mMap;
@@ -182,24 +187,26 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
             mMap.setOnMyLocationButtonClickListener(() -> {
-                isTrackingLocation = true; // Włącz śledzenie lokalizacji
+                isTrackingLocation = true;
                 if (lastKnownLocation != null) {
                     CameraPosition cameraPosition = new CameraPosition.Builder()
-                            .target(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude())) // Ustawia pozycję
-                            .zoom(18) // Ustawia poziom zoomu
-                            .tilt(60) // Ustawia kąt nachylenia kamery
-                            .build(); // Buduje nową pozycję kamery
+                            .target(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()))
+                            .zoom(18)
+                            .tilt(60)
+                            .build();
                     mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 }
-                startLocationUpdates(); // Rozpocznij aktualizacje lokalizacji
+                startLocationUpdates();
                 return true;
             });
 
             mMap.setOnCameraMoveStartedListener(reason -> {
                 if (reason == GoogleMap.OnCameraMoveStartedListener.REASON_GESTURE) {
-                    isTrackingLocation = false; // Wyłącz śledzenie lokalizacji gdy użytkownik przesuwa mapę
+                    isTrackingLocation = false;
                 }
             });
+
+            mMap.setOnMarkerClickListener(this);
         } else {
             requestLocationPermission();
         }
@@ -215,13 +222,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 Glide.with(this)
                         .asBitmap()
                         .load(photoUrl)
+                        .override(300, 300) // Ustawia stały rozmiar obrazka na 100x100 pikseli
+                        .circleCrop() // Przycina obrazek do kształtu koła
                         .into(new CustomTarget<Bitmap>() {
                             @Override
                             public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-                                mMap.addMarker(new MarkerOptions()
+                                Marker marker = mMap.addMarker(new MarkerOptions()
                                         .position(placeLocation)
-                                        .icon(BitmapDescriptorFactory.fromBitmap(resource))
+                                        .icon(BitmapDescriptorFactory.fromBitmap(resource)) // Ustaw przetworzony obrazek jako ikonę
                                         .title(place.getName()));
+                                marker.setTag(place);
                             }
 
                             @Override
@@ -229,7 +239,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             }
                         });
             } else {
-                mMap.addMarker(new MarkerOptions().position(placeLocation).title(place.getName()));
+                Marker marker = mMap.addMarker(new MarkerOptions().position(placeLocation).title(place.getName()));
+                marker.setTag(place); // Przypisanie obiektu Place jako tag markera
             }
         }
 
@@ -238,4 +249,39 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         startLocationUpdates();
     }
+
+
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        Place place = (Place) marker.getTag();
+        if (place != null) {
+            Log.d("MainActivity", "Marker clicked: " + place.getName());
+            showPlaceDetailsFragment(place);
+            Toast.makeText(this, "Wybrano: " + place.getName(), Toast.LENGTH_SHORT).show();
+        }
+        return true;
+    }
+
+    private void showPlaceDetailsFragment(Place place) {
+        LocationDetailsFragment fragment = LocationDetailsFragment.newInstance(place);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .addToBackStack(null)
+                .commit();
+    }
+
+    public static LocationDetailsFragment newInstance(Place place) {
+        LocationDetailsFragment fragment = new LocationDetailsFragment();
+        Bundle args = new Bundle();
+        args.putParcelable(LocationDetailsFragment.ARG_PLACE, place);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+
+
+
+
+
+
 }

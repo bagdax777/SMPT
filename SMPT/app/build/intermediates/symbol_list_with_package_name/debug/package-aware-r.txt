@@ -3526,6 +3526,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addressTextView
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3654,6 +3655,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3702,6 +3704,7 @@ id line3
 id linear
 id listMode
 id list_item
+id locationImage
 id m3_side_sheet
 id map
 id marquee
@@ -3763,6 +3766,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameTextView
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -4110,6 +4114,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_location_details
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -4255,8 +4260,10 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string image_error
 string item_view_role_description
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

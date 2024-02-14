@@ -36,7 +36,7 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
         double longitude = Double.parseDouble(params[2]);
         String placesUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" +
                 "location=" + latitude + "," + longitude +
-                "&radius=1000" +
+                "&radius=1500" +
                 "&type=museum" +
                 "&key=" + apiKey;
 
@@ -57,12 +57,28 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
             JSONObject jsonObject = new JSONObject(result.toString());
             JSONArray results = jsonObject.getJSONArray("results");
 
+
             for (int i = 0; i < results.length(); i++) {
                 JSONObject placeJson = results.getJSONObject(i);
-                String name = placeJson.getString("name");
+                Log.d("MOJ", "JSON:"+ placeJson);
+
+                String name = placeJson.has("name") ? placeJson.getString("name") : "Brak danych";
+                String code = placeJson.has("plus_code") ? placeJson.getJSONObject("plus_code").getString("compound_code") : "Brak danych";
+                Boolean open = placeJson.has("opening_hours") ? placeJson.getJSONObject("opening_hours").getBoolean("open_now") : null;
+                Integer rate = placeJson.has("rating") ? placeJson.getInt("rating") : null;
+                String address = placeJson.has("vicinity") ? placeJson.getString("vicinity") : "Brak danych";
+
+
+                JSONArray typesArray = placeJson.getJSONArray("types");
+                String[] types = new String[typesArray.length()];
+                for (int j = 0; j < typesArray.length(); j++) {
+                    types[j] = typesArray.getString(j);
+                }
+
                 double lat = placeJson.getJSONObject("geometry").getJSONObject("location").getDouble("lat");
                 double lng = placeJson.getJSONObject("geometry").getJSONObject("location").getDouble("lng");
                 String photoReference = null;
+
 
                 if (placeJson.has("photos") && !placeJson.getJSONArray("photos").isNull(0)) {
                     JSONArray photosArray = placeJson.getJSONArray("photos");
@@ -78,8 +94,11 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
                             "&key=" + apiKey;
                 }
 
-                places.add(new Place(name, lat, lng, photoUrl));
-                Log.d("MOJ2", photoUrl);
+                places.add(new Place(name, lat, lng, photoUrl, code, open, rate, address, types));
+                if (photoUrl != null) {
+                    Log.d("MOJ2", photoUrl);
+                } else {
+                    Log.d("MOJ2", "photoUrl jest null");}
             }
 
             Log.d("MOJ2", "Zakończono pobieranie danych. Liczba pobranych miejsc: " + places.size());
