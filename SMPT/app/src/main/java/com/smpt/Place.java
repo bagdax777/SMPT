@@ -7,6 +7,8 @@ import androidx.annotation.NonNull;
 
 import org.json.JSONArray;
 
+import java.util.List;
+
 public class Place implements Parcelable {
     private String name;
     private double latitude;
@@ -17,6 +19,8 @@ public class Place implements Parcelable {
     private Integer rate;
     private String address;
     private String[] types;
+    private String wikiExtract;
+    private List<String> wikiImageLinks;
 
     public Place(String name, double latitude, double longitude, String photoUrl, String code, Boolean open, Integer rate, String address, String[] types) {
         this.name = name;

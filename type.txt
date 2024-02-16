@@ -1,95 +1,95 @@
-accounting
-airport
-amusement_park
-aquarium
-art_gallery
-atm
-bakery
-bank
-bar
-beauty_salon
-bicycle_store
-book_store
-bowling_alley
-bus_station
-cafe
-campground
-car_dealer
-car_rental
-car_repair
-car_wash
-casino
-cemetery
-church
-city_hall
-clothing_store
-convenience_store
-courthouse
-dentist
-department_store
-doctor
-electrician
-electronics_store
-embassy
-fire_station
-florist
-funeral_home
-furniture_store
-gas_station
-gym
-hair_care
-hardware_store
-hindu_temple
-home_goods_store
-hospital
-insurance_agency
-jewelry_store
-laundry
-lawyer
-library
-light_rail_station
-liquor_store
-local_government_office
-locksmith
-lodging
-meal_delivery
-meal_takeaway
-mosque
-movie_rental
-movie_theater
-moving_company
-museum
-night_club
-painter
-park
-parking
-pet_store
-pharmacy
-physiotherapist
-plumber
-police
-post_office
-primary_school
-real_estate_agency
-restaurant
-roofing_contractor
-rv_park
-school
-secondary_school
-shoe_store
-shopping_mall
-spa
-stadium
-storage
-store
-subway_station
-supermarket
-synagogue
-taxi_stand
-tourist_attraction
-train_station
-transit_station
-travel_agency
-university
-veterinary_care
-zoo
+accounting - księgowość
+airport - lotnisko
+amusement_park - park rozrywki
+aquarium - akwarium
+art_gallery - galeria sztuki
+atm - bankomat
+bakery - piekarnia
+bank - bank
+bar - bar
+beauty_salon - salon piękności
+bicycle_store - sklep rowerowy
+book_store - księgarnia
+bowling_alley - kręgielnia
+bus_station - dworzec autobusowy
+cafe - kawiarnia
+campground - pole kempingowe
+car_dealer - dealer samochodowy
+car_rental - wypożyczalnia samochodów
+car_repair - warsztat samochodowy
+car_wash - myjnia samochodowa
+casino - kasyno
+cemetery - cmentarz
+church - kościół
+city_hall - ratusz
+clothing_store - sklep odzieżowy
+convenience_store - sklep osiedlowy
+courthouse - sąd
+dentist - dentysta
+department_store - dom towarowy
+doctor - lekarz
+electrician - elektryk
+electronics_store - sklep elektroniczny
+embassy - ambasada
+fire_station - straż pożarna
+florist - kwiaciarnia
+funeral_home - dom pogrzebowy
+furniture_store - sklep meblowy
+gas_station - stacja benzynowa
+gym - siłownia
+hair_care - salon fryzjerski
+hardware_store - sklep z narzędziami
+hindu_temple - świątynia hinduistyczna
+home_goods_store - sklep z artykułami do domu
+hospital - szpital
+insurance_agency - agencja ubezpieczeniowa
+jewelry_store - jubiler
+laundry - pralnia
+lawyer - prawnik
+library - biblioteka
+light_rail_station - stacja lekkiej kolei
+liquor_store - sklep monopolowy
+local_government_office - urząd lokalny
+locksmith - ślusarz
+lodging - zakwaterowanie
+meal_delivery - dostawa posiłków
+meal_takeaway - jedzenie na wynos
+mosque - meczet
+movie_rental - wypożyczalnia filmów
+movie_theater - kino
+moving_company - firma przeprowadzkowa
+museum - muzeum
+night_club - klub nocny
+painter - malarz
+park - park
+parking - parking
+pet_store - sklep zoologiczny
+pharmacy - apteka
+physiotherapist - fizjoterapeuta
+plumber - hydraulik
+police - policja
+post_office - poczta
+primary_school - szkoła podstawowa
+real_estate_agency - agencja nieruchomości
+restaurant - restauracja
+roofing_contractor - dekarz
+rv_park - parking dla samochodów kempingowych
+school - szkoła
+secondary_school - szkoła średnia
+shoe_store - sklep obuwniczy
+shopping_mall - centrum handlowe
+spa - spa
+stadium - stadion
+storage - przechowalnia
+store - sklep
+subway_station - stacja metra
+supermarket - supermarket
+synagogue - synagoga
+taxi_stand - postój taksówek
+tourist_attraction - atrakcja turystyczna
+train_station - dworzec kolejowy
+transit_station - stacja przesiadkowa
+travel_agency - biuro podróży
+university - uniwersytet
+veterinary_care - opieka weterynaryjna
+zoo - zoo

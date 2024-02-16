@@ -9,6 +9,7 @@ id fragment_container
 id locationImage
 id map
 id nameTextView
+id opis
 layout activity_main
 layout fragment_location_details
 mipmap ic_launcher

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\socha\\.gradle\\daemon\\8.2\\com.smpt.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\socha\\.gradle\\daemon\\8.2\\com.smpt.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\socha\\.gradle\\daemon\\8.2\\com.smpt.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\socha\\.gradle\\daemon\\8.2\\com.smpt.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\socha\\.gradle\\daemon\\8.2\\com.smpt.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\socha\\.gradle\\daemon\\8.2\\com.smpt.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\socha\\.gradle\\daemon\\8.2\\com.smpt.app-merged_res-33:\\xml_backup_rules.xml.flat",

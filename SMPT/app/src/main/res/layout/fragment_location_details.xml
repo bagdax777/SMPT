@@ -33,6 +33,16 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/nameTextView"/>
 
+    <TextView
+        android:id="@+id/opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addressTextView"/>
+
 
 
 

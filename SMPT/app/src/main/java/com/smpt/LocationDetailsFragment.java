@@ -58,6 +58,13 @@ public class LocationDetailsFragment extends Fragment {
             TextView textViewAddress = view.findViewById(R.id.addressTextView);
             textViewAddress.setText(mPlace.getCode());
 
+
+            //WikiQueryTask wikiQueryTask = new WikiQueryTask();
+            //WikiResult res = wikiQueryTask.queryWikipedia(mPlace.getName());
+            //TextView Opis = view.findViewById(R.id.opis);
+
+            //Opis.setText(res.getExtract());
+
         }
 
 

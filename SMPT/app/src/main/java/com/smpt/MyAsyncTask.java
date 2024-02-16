@@ -36,8 +36,8 @@ public class MyAsyncTask extends AsyncTask<String, Void, ArrayList<Place>> {
         double longitude = Double.parseDouble(params[2]);
         String placesUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" +
                 "location=" + latitude + "," + longitude +
-                "&radius=1500" +
-                "&type=museum" +
+                "&radius=3500" +
+                "&type=museum|tourist_attraction|church|city_hall|amusement_park|art_gallery|cemetery|mosque|stadium|synagogue|university|zoo" +
                 "&key=" + apiKey;
 
         ArrayList<Place> places = new ArrayList<>();

@@ -3787,6 +3787,7 @@ int id notification_main_column_container 0x7f080145
 int id off 0x7f080146
 int id on 0x7f080147
 int id onInterceptTouchReturnSwipe 0x7f080148
+int id opis 0x7f080212
 int id outline 0x7f080149
 int id outward 0x7f08014a
 int id overshoot 0x7f08014b
