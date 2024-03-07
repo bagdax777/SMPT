@@ -15,13 +15,13 @@ public class LocationDetailsFragment extends Fragment {
 
     public static final String ARG_PLACE = "place"; // Stabilna nazwa klucza
 
-    private Place mPlace;
+    private Place2 mPlace;
 
     public LocationDetailsFragment() {
         // Pusty konstruktor wymagany dla fragmentu
     }
 
-    public static LocationDetailsFragment newInstance(Place place) {
+    public static LocationDetailsFragment newInstance(Place2 place) {
         LocationDetailsFragment fragment = new LocationDetailsFragment();
         Bundle args = new Bundle();
         args.putParcelable(ARG_PLACE, place);
@@ -42,31 +42,22 @@ public class LocationDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_location_details, container, false);
 
-        if (getArguments() != null && getArguments().containsKey(ARG_PLACE)) {
-            mPlace = getArguments().getParcelable(ARG_PLACE);
-
-            ImageView locationImage = view.findViewById(R.id.locationImage); // Poprawione
-            String photoUrl = mPlace.getPhotoUrl();
+        if (mPlace != null) {
+            ImageView locationImage = view.findViewById(R.id.locationImage);
+            String mainImageUrl = mPlace.getMainImageUrl();
+            String image = mPlace.getImageUrls().get(0);
             Glide.with(this)
-                    .load(photoUrl)
-                    .centerCrop() // Dla przycięcia do formatu ImageView z zachowaniem proporcji
+                    .load(mainImageUrl)
+                    .centerCrop()
                     .into(locationImage);
 
             TextView textViewName = view.findViewById(R.id.nameTextView);
-            textViewName.setText(mPlace.getName());
+            textViewName.setText(mPlace.getTitle());
 
             TextView textViewAddress = view.findViewById(R.id.addressTextView);
-            textViewAddress.setText(mPlace.getCode());
-
-
-            //WikiQueryTask wikiQueryTask = new WikiQueryTask();
-            //WikiResult res = wikiQueryTask.queryWikipedia(mPlace.getName());
-            //TextView Opis = view.findViewById(R.id.opis);
-
-            //Opis.setText(res.getExtract());
-
+            // Zakładając, że `getCode()` zwraca adres
+            textViewAddress.setText(mPlace.getExtract());
         }
-
 
         return view;
     }

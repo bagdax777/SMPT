@@ -1,0 +1,5 @@
+macież analizy rynku: https://zutedupl-my.sharepoint.com/:x:/r/personal/sa48938_zut_edu_pl/Documents/Ksi%C4%85%C5%BCka.xlsx?d=w57be68f0b8754319b5e440a1eb2bf4d1&csf=1&web=1&e=TqlxpC
+ankieta: https://forms.office.com/Pages/ResponsePage.aspx?id=1GqmCo_5FUW3ybYP03rQJ6pZ-oXBcANIgxzM4us0O1dUM00yQ1hIU1MyMU5DUDlCMUlWTTE0VVozOS4u
+figma: https://www.figma.com/file/9thaYmhDGq0L8F3dUzNAc0/Sowjanya-(Community)?type=design&node-id=0%3A1&mode=design&t=CHnY6XidRtW6UCzi-1
+
+dokumentacja do API = https://developers.google.com/maps/documentation/android-sdk/start?hl=pl#maps_android_mapsactivity-java

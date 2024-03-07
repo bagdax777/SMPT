@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id addressTextView
+id fragment_container
+id locationImage
+id map
+id nameTextView
+id opis
+layout activity_main
+layout fragment_location_details
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string hello_blank_fragment
+string image_error
+string my_map_api_key
+style Base.Theme.SMPT
+style Theme.SMPT
+xml backup_rules
+xml data_extraction_rules

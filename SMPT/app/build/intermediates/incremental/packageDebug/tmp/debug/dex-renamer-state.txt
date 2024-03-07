@@ -1,8 +1,8 @@
-#Fri Feb 16 01:23:29 CET 2024
-base.0=C\:\\Users\\socha\\OneDrive\\Desktop\\SMPT\\SMPT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\socha\\OneDrive\\Desktop\\SMPT\\SMPT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\socha\\OneDrive\\Desktop\\SMPT\\SMPT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.3=C\:\\Users\\socha\\OneDrive\\Desktop\\SMPT\\SMPT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Fri Mar 08 00:05:51 CET 2024
+base.0=C\:\\Users\\socha\\OneDrive\\Desktop\\FUTURE RAVE\\SMPT wiki\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\socha\\OneDrive\\Desktop\\FUTURE RAVE\\SMPT wiki\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\socha\\OneDrive\\Desktop\\FUTURE RAVE\\SMPT wiki\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.3=C\:\\Users\\socha\\OneDrive\\Desktop\\FUTURE RAVE\\SMPT wiki\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=6/classes.dex
