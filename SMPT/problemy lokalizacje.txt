@@ -1,2 +1,0 @@
-bledny łacznik | zamiast ,
-paginacja do 20 obiektów

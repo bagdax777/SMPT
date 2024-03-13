@@ -1,3 +1,0 @@
-com.smpt.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

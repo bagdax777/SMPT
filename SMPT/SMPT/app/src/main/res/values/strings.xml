@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">SMPT</string>
-
-    <string name="my_map_api_key">AIzaSyCjvZFK2yYWD0X6RGdBOdBpFuw66wJTRSo</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="image_error">error image</string>
-</resources>

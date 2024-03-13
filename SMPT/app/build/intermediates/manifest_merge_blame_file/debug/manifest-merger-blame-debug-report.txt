@@ -9,14 +9,14 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:5:5-79
-11-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:5:22-76
+11-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:5:22-76
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:6:5-81
-12-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:6:22-78
+12-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:7:5-66
-13-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:7:22-64
+13-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:7:22-64
 14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
 14-->[com.google.android.libraries.places:places:3.3.0] C:\Users\socha\.gradle\caches\transforms-3\d5d09a89ac1a16e07d029fae8682384f\transformed\places-3.3.0\AndroidManifest.xml:11:5-76
 14-->[com.google.android.libraries.places:places:3.3.0] C:\Users\socha\.gradle\caches\transforms-3\d5d09a89ac1a16e07d029fae8682384f\transformed\places-3.3.0\AndroidManifest.xml:11:22-73
@@ -52,52 +52,52 @@
 31-->[androidx.core:core:1.12.0] C:\Users\socha\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 32
 33    <application
-33-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:9:5-33:19
+33-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:9:5-33:19
 34        android:allowBackup="true"
-34-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:10:9-35
+34-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:10:9-35
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 35-->[androidx.core:core:1.12.0] C:\Users\socha\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 36        android:dataExtractionRules="@xml/data_extraction_rules"
-36-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:11:9-65
+36-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:11:9-65
 37        android:debuggable="true"
 38        android:extractNativeLibs="false"
 39        android:fullBackupContent="@xml/backup_rules"
-39-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:12:9-54
+39-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:12:9-54
 40        android:icon="@mipmap/ic_launcher"
-40-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:13:9-43
+40-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:13:9-43
 41        android:label="@string/app_name"
-41-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:14:9-41
+41-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:14:9-41
 42        android:roundIcon="@mipmap/ic_launcher_round"
-42-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:15:9-54
+42-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:15:9-54
 43        android:supportsRtl="true"
-43-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:16:9-35
+43-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:16:9-35
 44        android:testOnly="true"
 45        android:theme="@style/Theme.SMPT" >
-45-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:17:9-42
+45-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:17:9-42
 46        <activity
-46-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:19:9-27:20
+46-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:19:9-27:20
 47            android:name="com.smpt.MainActivity"
-47-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:20:13-40
+47-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:20:13-40
 48            android:exported="true" >
-48-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:21:13-36
+48-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:21:13-36
 49            <intent-filter>
-49-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:22:13-26:29
+49-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:22:13-26:29
 50                <action android:name="android.intent.action.MAIN" />
-50-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:23:17-69
-50-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:23:25-66
+50-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:23:17-69
+50-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:23:25-66
 51
 52                <category android:name="android.intent.category.LAUNCHER" />
-52-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:25:17-77
-52-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:25:27-74
+52-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:25:17-77
+52-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:25:27-74
 53            </intent-filter>
 54        </activity>
 55
 56        <meta-data
-56-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:29:9-31:54
+56-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:29:9-31:54
 57            android:name="com.google.android.geo.API_KEY"
-57-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:30:13-58
+57-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:30:13-58
 58            android:value="@string/my_map_api_key" />
-58-->C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\AndroidManifest.xml:31:13-51
+58-->C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:31:13-51
 59
 60        <activity
 60-->[com.google.android.libraries.places:places:3.3.0] C:\Users\socha\.gradle\caches\transforms-3\d5d09a89ac1a16e07d029fae8682384f\transformed\places-3.3.0\AndroidManifest.xml:15:9-21:20
