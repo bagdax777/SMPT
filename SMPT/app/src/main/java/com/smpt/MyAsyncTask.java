@@ -37,7 +37,7 @@ public class MyAsyncTask extends AsyncTask<Void, Void, ArrayList<Place2>> {
         Log.d(TAG, "Rozpoczynanie pobierania danych z Wikipedia API.");
         ArrayList<Place2> places = new ArrayList<>();
         try {
-            String radius = "1000";
+            String radius = "500";
             String url = "https://pl.wikipedia.org/w/api.php?action=query&list=geosearch&gscoord="
                     + latitude + "%7C" + longitude + "&gsradius=" + radius + "&gslimit=500&format=json";
 

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customBottomNav"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#121212"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <!-- Odkrywaj -->
+    <LinearLayout
+        android:id="@+id/menu_odkrywaj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_odkrywaj"
+            android:contentDescription="@string/menu_odkrywaj"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_odkrywaj"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <!-- Szukaj -->
+    <LinearLayout
+        android:id="@+id/menu_szukaj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_szukaj"
+            android:contentDescription="@string/menu_szukaj"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_szukaj"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <!-- Mapa -->
+    <LinearLayout
+        android:id="@+id/menu_mapa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/green_circle"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_map"
+            android:contentDescription="@string/menu_mapa"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_mapa"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Ulubione -->
+    <LinearLayout
+        android:id="@+id/menu_ulubione"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_ulubione"
+            android:contentDescription="@string/menu_ulubione"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_ulubione"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <!-- Profil -->
+    <LinearLayout
+        android:id="@+id/menu_profil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_profil"
+            android:contentDescription="@string/menu_profil"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_profil"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

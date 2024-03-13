@@ -5,4 +5,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="image_error">error image</string>
+    <string name="menu_odkrywaj">Odkrywaj</string>
+    <string name="menu_szukaj">Szukaj</string>
+    <string name="menu_mapa">Mapa</string>
+    <string name="menu_ulubione">Ulubione</string>
+    <string name="menu_profil">Profil</string>
 </resources>

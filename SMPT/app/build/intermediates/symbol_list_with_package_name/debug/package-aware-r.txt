@@ -2091,6 +2091,8 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color purple_500
+color purple_700
 color quantum_amber100
 color quantum_amber200
 color quantum_amber300
@@ -2446,6 +2448,8 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color teal_200
+color teal_700
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -3353,6 +3357,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable green_circle
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3368,11 +3373,16 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_map
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_odkrywaj
+drawable ic_profil
 drawable ic_search_black_24
+drawable ic_szukaj
+drawable ic_ulubione
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3593,7 +3603,9 @@ id counterclockwise
 id cradle
 id currentState
 id custom
+id customBottomNav
 id customPanel
+id custom_bottom_navigation
 id cut
 id dark
 id date_picker_actions
@@ -3706,6 +3718,7 @@ id listMode
 id list_item
 id locationImage
 id m3_side_sheet
+id main_layout
 id map
 id marquee
 id masked
@@ -3732,6 +3745,11 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id menu_mapa
+id menu_odkrywaj
+id menu_profil
+id menu_szukaj
+id menu_ulubione
 id message
 id middle
 id mini
@@ -4100,6 +4118,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout custom_dialog
+layout custom_navigation_bar
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -4303,6 +4322,11 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string menu_mapa
+string menu_odkrywaj
+string menu_profil
+string menu_szukaj
+string menu_ulubione
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name

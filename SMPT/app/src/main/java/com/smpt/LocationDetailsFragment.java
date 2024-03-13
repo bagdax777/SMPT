@@ -1,12 +1,14 @@
 package com.smpt;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
@@ -30,7 +32,7 @@ public class LocationDetailsFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mPlace = getArguments().getParcelable(ARG_PLACE);
@@ -42,21 +44,39 @@ public class LocationDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_location_details, container, false);
 
+        ImageView locationImage = view.findViewById(R.id.locationImage);
+        TextView textViewName = view.findViewById(R.id.nameTextView);
+        TextView textViewAddress = view.findViewById(R.id.addressTextView);
+
         if (mPlace != null) {
-            ImageView locationImage = view.findViewById(R.id.locationImage);
+            // Obsługa obrazu głównego
             String mainImageUrl = mPlace.getMainImageUrl();
-            String image = mPlace.getImageUrls().get(0);
-            Glide.with(this)
-                    .load(mainImageUrl)
-                    .centerCrop()
-                    .into(locationImage);
+            String imageUrl = mPlace.getImageUrls() != null && !mPlace.getImageUrls().isEmpty() ? mPlace.getImageUrls().get(0) : null;
+            Log.d("LocationDetailsFragment", "mainImageUrl: " + mainImageUrl);
+            Log.d("LocationDetailsFragment", "imageUrl: " + imageUrl);
 
-            TextView textViewName = view.findViewById(R.id.nameTextView);
-            textViewName.setText(mPlace.getTitle());
+            if (mainImageUrl != null && !mainImageUrl.isEmpty()) {
+                Glide.with(this)
+                        .load(mainImageUrl)
+                        .centerCrop()
+                        .into(locationImage);
+            } else {
+                // W przypadku braku URL obrazu, nie ustawiaj niczego, co spowoduje wyświetlenie miejsca na obraz bez obrazu
+                locationImage.setVisibility(View.GONE); // Można też ukryć element ImageView
+            }
 
-            TextView textViewAddress = view.findViewById(R.id.addressTextView);
-            // Zakładając, że `getCode()` zwraca adres
-            textViewAddress.setText(mPlace.getExtract());
+            // Ustawianie tytułu
+            String title = mPlace.getTitle() != null ? mPlace.getTitle() : "";
+            textViewName.setText(title);
+
+            // Ustawianie adresu/ekstraktu
+            String address = mPlace.getExtract() != null ? mPlace.getExtract() : "";
+            textViewAddress.setText(address);
+        } else {
+            // W przypadku braku danych miejsca, ustawiaj puste ciągi
+            textViewName.setText("");
+            textViewAddress.setText("");
+            locationImage.setVisibility(View.GONE); // Ukryj ImageView, jeśli nie ma obrazu do wyświetlenia
         }
 
         return view;
