@@ -1,49 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@color/black">
 
-
-    <ImageView
-        android:id="@+id/locationImage"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/image_error"/>
-
-    <TextView
-        android:id="@+id/nameTextView"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/locationImage"/>
-
-    <TextView
-        android:id="@+id/addressTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_marginBottom="8dp"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/nameTextView"/>
-
-    <TextView
-        android:id="@+id/opis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_marginBottom="8dp"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/addressTextView"/>
+        android:id="@+id/details_container">
 
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/imagesViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imagesViewPager"/>
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/nameTextView"/>
 
 
-</RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showMoreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="2dp"
+            android:text="więcej"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:background="@drawable/button_green_rounded"
+            android:textColor="@color/black"
+            android:layout_below="@id/addressTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/speakButton"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:drawableBottom="@drawable/ic_headset"
+            android:background="@drawable/button_green_rounded"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Ten kontener będzie używany do zamiany fragmentów -->
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

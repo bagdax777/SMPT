@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smpt.app-mergeDebugResources-31:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.smpt.app-mergeDebugResources-32:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\ff3e7a6cbd6877b655429719bd7e51c8\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
