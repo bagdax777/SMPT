@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918136851455",
+    "project_id": "smpt-408017",
+    "storage_bucket": "smpt-408017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918136851455:android:2a132eae2e0f65139175ca",
+        "android_client_info": {
+          "package_name": "com.smpt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmxEg5hCTO6MKXlPs3WggBVIdMCXtm3eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

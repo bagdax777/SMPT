@@ -10,4 +10,20 @@
     <string name="menu_mapa">Mapa</string>
     <string name="menu_ulubione">Ulubione</string>
     <string name="menu_profil">Profil</string>
+    <string name="title_activity_authentication">Authentication</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+
+    <string name="login">Zaloguj się</string>
+    <string name="email">email</string>
+    <string name="password">hasło</string>
+    <string name="btn_login">Zaloguj</string>
+    <string name="register">Rejestracja</string>
+    <string name="btn_register">Zarejestruj</string>
+    <string name="kliknij_by_zalogować">Masz już konto? Zaloguj się</string>
+    <string name="kliknij_by_zarejestrowac">Nie masz konta? Zarejestruj się</string>
+    <string name="btn_register_now">Zarejestruj się</string>
+    <string name="nie_masz_konta">Nie masz konta?</string>
+    <string name="btn_login_now">Zaloguj się</string>
+
 </resources>

@@ -5,7 +5,22 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml">
+        <config>
+          <theme>@style/Theme.SMPT</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/Theme.SMPT</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.SMPT</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
         <config>
           <theme>@style/Theme.SMPT</theme>
         </config>
@@ -126,6 +141,12 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="android.template.-1429959182">
+      <recent name="com.smpt" />
+    </key>
+    <key name="android.template.1901354589">
+      <recent name="com.smpt" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\res\layout" />
       <recent name="C:\Users\socha\OneDrive\Desktop\git\SMPT\SMPT\app\src\main\res\menu" />

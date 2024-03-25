@@ -7,14 +7,33 @@
     <color name="teal_700">#018786</color>
     <color name="white">#FFFFFF</color>
     <string name="app_name">SMPT</string>
+    <string name="btn_login">Zaloguj</string>
+    <string name="btn_login_now">Zaloguj się</string>
+    <string name="btn_register">Zarejestruj</string>
+    <string name="btn_register_now">Zarejestruj się</string>
+    <string name="email">email</string>
+    <string name="gcm_defaultSenderId" translatable="false">918136851455</string>
+    <string name="google_api_key" translatable="false">AIzaSyBmxEg5hCTO6MKXlPs3WggBVIdMCXtm3eg</string>
+    <string name="google_app_id" translatable="false">1:918136851455:android:2a132eae2e0f65139175ca</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBmxEg5hCTO6MKXlPs3WggBVIdMCXtm3eg</string>
+    <string name="google_storage_bucket" translatable="false">smpt-408017.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="image_error">error image</string>
+    <string name="kliknij_by_zalogować">Masz już konto? Zaloguj się</string>
+    <string name="kliknij_by_zarejestrowac">Nie masz konta? Zarejestruj się</string>
+    <string name="login">Zaloguj się</string>
     <string name="menu_mapa">Mapa</string>
     <string name="menu_odkrywaj">Odkrywaj</string>
     <string name="menu_profil">Profil</string>
     <string name="menu_szukaj">Szukaj</string>
     <string name="menu_ulubione">Ulubione</string>
     <string name="my_map_api_key">AIzaSyCjvZFK2yYWD0X6RGdBOdBpFuw66wJTRSo</string>
+    <string name="nie_masz_konta">Nie masz konta?</string>
+    <string name="password">hasło</string>
+    <string name="project_id" translatable="false">smpt-408017</string>
+    <string name="register">Rejestracja</string>
+    <string name="title_activity_authentication">Authentication</string>
+    <string name="title_activity_main2">MainActivity2</string>
     <style name="Base.Theme.SMPT" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -27,7 +46,15 @@
         <item name="android:statusBarColor" ns1:targetApi="l">@color/black</item>
         
         <item name="colorAccent">@color/purple_500</item>
-        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlNormal">@color/white</item> 
+        <item name="colorControlActivated">@color/white</item> 
+    </style>
+    <style name="CustomTextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:textColorHint">@color/white</item>
+        
+        <item name="colorControlActivated">@color/white</item>
+        
+        <item name="boxStrokeColor">@color/white</item>
     </style>
     <style name="Theme.SMPT" parent="Base.Theme.SMPT"/>
 </resources>

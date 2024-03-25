@@ -1,6 +1,7 @@
 package com.smpt;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -8,6 +9,8 @@ import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -36,6 +39,8 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -53,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean isTrackingLocation = true;
     private int markerCount = 0;
     private HashSet<String> existingMarkers = new HashSet<>();
+    FirebaseAuth auth;
+    Button btn_logout;
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,9 +80,30 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             getLastKnownLocationAndFetchPlaces();
         }
 
+        auth = FirebaseAuth.getInstance();
+        btn_logout=findViewById(R.id.btn_logout);
+        user=auth.getCurrentUser();
+        if(user==null){
+            Intent intent = new Intent(getApplicationContext(), Login.class);
+            startActivity(intent);
+            finish();
+        }
+        else{
+            //zalogowany użytkownik
+            btn_logout.setVisibility(View.VISIBLE);
+        }
+        btn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
-        // Znajdź LinearLayout dla każdego elementu paska nawigacji
-        LinearLayout navOdkrywaj = findViewById(R.id.menu_odkrywaj);
+                // Znajdź LinearLayout dla każdego elementu paska nawigacji
+                LinearLayout navOdkrywaj = findViewById(R.id.menu_odkrywaj);
         LinearLayout navSzukaj = findViewById(R.id.menu_szukaj);
         LinearLayout navMapa = findViewById(R.id.menu_mapa);
         LinearLayout navUlubione = findViewById(R.id.menu_ulubione);
