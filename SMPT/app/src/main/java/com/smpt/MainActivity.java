@@ -59,8 +59,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private int markerCount = 0;
     private HashSet<String> existingMarkers = new HashSet<>();
     FirebaseAuth auth;
-    Button btn_logout;
     FirebaseUser user;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,29 +84,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         auth = FirebaseAuth.getInstance();
-        btn_logout=findViewById(R.id.btn_logout);
         user=auth.getCurrentUser();
         if(user==null){
             Intent intent = new Intent(getApplicationContext(), Login.class);
             startActivity(intent);
-            finish();
         }
-        else{
-            //zalogowany użytkownik
-            btn_logout.setVisibility(View.VISIBLE);
-        }
-        btn_logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(getApplicationContext(), Login.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
-                // Znajdź LinearLayout dla każdego elementu paska nawigacji
-                LinearLayout navOdkrywaj = findViewById(R.id.menu_odkrywaj);
+
+
+        // Znajdź LinearLayout dla każdego elementu paska nawigacji
+        LinearLayout navOdkrywaj = findViewById(R.id.menu_odkrywaj);
         LinearLayout navSzukaj = findViewById(R.id.menu_szukaj);
         LinearLayout navMapa = findViewById(R.id.menu_mapa);
         LinearLayout navUlubione = findViewById(R.id.menu_ulubione);
@@ -126,9 +116,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             showToast("Ulubione");
         });
 
+
+
         navProfil.setOnClickListener(v -> {
-            // Akcja dla przycisku Profil
-            showToast("Profil");
+            // Zamykanie aktualnego fragmentu LocationDetailsFragment
+            getSupportFragmentManager().popBackStack();
+
+            // Tworzenie i otwieranie nowego fragmentu ProfilFragment
+            ProfilFragment profilFragment = new ProfilFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, profilFragment)
+                    .addToBackStack(null)
+                    .commit();
         });
 
 
@@ -143,6 +142,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
     }
+
+
     private void showMapFragment() {
         // Usunięcie wszystkich fragmentów ze stosu powrotu
         getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
@@ -184,11 +185,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(LocationResult locationResult) {
-                if (locationResult != null && isTrackingLocation) {
+                if (locationResult != null) {
                     for (Location location : locationResult.getLocations()) {
                         CameraPosition cameraPosition = new CameraPosition.Builder()
                                 .target(new LatLng(location.getLatitude(), location.getLongitude())) // Ustawia pozycję
-                                .zoom(18) // Ustawia poziom zoomu
+                                .zoom(17) // Ustawia poziom zoomu
                                 .tilt(60) // Ustawia kąt nachylenia
                                 .build(); // Buduje nową pozycję kamery
                         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
@@ -227,8 +228,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (mMap != null && latLng != null) {
             CameraPosition cameraPosition = new CameraPosition.Builder()
                     .target(latLng)
-                    .zoom(18)
-                    .tilt(60)
+                    .zoom(17)
+                    .tilt(80)
                     .build();
 
             mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
@@ -267,30 +268,47 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
             mMap.setOnMyLocationButtonClickListener(() -> {
-                isTrackingLocation = true;
-                if (lastKnownLocation != null) {
-                    CameraPosition cameraPosition = new CameraPosition.Builder()
-                            .target(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()))
-                            .zoom(18)
-                            .tilt(60)
-                            .build();
-                    mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                isTrackingLocation = !isTrackingLocation; // Przełączanie flagi śledzenia lokalizacji
+                if (isTrackingLocation) {
+                    // Jeśli śledzenie jest włączone, przesuwamy kamerę do aktualnej lokalizacji
+                    if (lastKnownLocation != null) {
+                        CameraPosition cameraPosition = new CameraPosition.Builder()
+                                .target(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()))
+                                .zoom(17)
+                                .tilt(60)
+                                .build();
+                        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                    }
+                    startLocationUpdates(); // Rozpoczęcie aktualizacji lokalizacji
+                } else {
+                    stopLocationUpdates(); // Zatrzymanie aktualizacji lokalizacji gdy użytkownik przestanie śledzić lokalizację
                 }
-                startLocationUpdates();
                 return true;
             });
 
             mMap.setOnCameraMoveStartedListener(reason -> {
                 if (reason == GoogleMap.OnCameraMoveStartedListener.REASON_GESTURE) {
+                    // Jeśli użytkownik przesuwa mapę, przestajemy śledzić lokalizację
                     isTrackingLocation = false;
                 }
             });
 
             mMap.setOnMarkerClickListener(this);
+
+            // Centrowanie kamery na twojej lokalizacji po wczytaniu wszystkich markerów
+            if (lastKnownLocation != null) {
+                CameraPosition cameraPosition = new CameraPosition.Builder()
+                        .target(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()))
+                        .zoom(17)
+                        .tilt(60)
+                        .build();
+                mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+            }
         } else {
             requestLocationPermission();
         }
     }
+
 
     @Override
     public void processFinish(ArrayList<Place2> output) {
@@ -312,7 +330,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // Informacja o liczbie dodanych markerów
         Toast.makeText(this, "Na mapie wyświetlono " + markerCount + " unikalnych markerów", Toast.LENGTH_LONG).show();
+        // Wycentrowanie kamery na lokalizacji użytkownika po dodaniu wszystkich markerów
+        moveToLocationAndFetchPlaces(new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude()));
     }
+
 
     private void updateMarkerWithImage(Place2 place, LatLng position) {
         String photoUrl = place.getMainImageUrl();

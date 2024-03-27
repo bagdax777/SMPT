@@ -3370,6 +3370,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable green_circle
+drawable ic_accept
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3379,12 +3380,14 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_edit
 drawable ic_email
 drawable ic_email_padding
 drawable ic_headset
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3594,7 +3597,7 @@ id browser_actions_menu_view
 id btnForgotPasswordBack
 id btnReset
 id btn_login
-id btn_logout
+id btn_profil_back
 id btn_register
 id btn_register_back
 id buttonPanel
@@ -3622,6 +3625,7 @@ id closest
 id collapseActionView
 id compose_view_saveable_id_tag
 id compress
+id confirmProfileDescriptionButton
 id confirm_button
 id constraint
 id consume_window_insets_tag
@@ -3676,6 +3680,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editProfileDescriptionButton
 id edit_query
 id edit_text_id
 id edtForgotPasswordEmail
@@ -3761,6 +3766,7 @@ id linear
 id listMode
 id list_item
 id loginNow
+id logout
 id m3_side_sheet
 id main_container
 id main_layout
@@ -3851,6 +3857,7 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
+id opis
 id outline
 id outward
 id overshoot
@@ -3889,9 +3896,12 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id profileDescriptionEdit
+id profile_pic
 id progressBar
 id progress_circular
 id progress_horizontal
+id punkty
 id radio
 id ratio
 id rectangles
@@ -4037,6 +4047,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_email
 id vertical_only
 id viewExpYear
 id view_offset_helper
@@ -4202,6 +4213,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_full_screen_image
 layout fragment_location_details
+layout fragment_profil
 layout image_item
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity

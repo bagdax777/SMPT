@@ -1,0 +1,63 @@
+Wprowadzenie
+	4.1. Kontekst projektu
+		4.1.1. Znaczenie technologii mobilnych w turystyce
+		4.1.2. Potrzeba społecznych interakcji w przewodnikach turystycznych
+	4.2. Cel pracy
+		4.2.1. Główne cele projektu
+		4.2.2. Specyficzne cele funkcjonalności aplikacji
+	4.3. Zakres pracy
+		4.3.1. Ograniczenia projektu
+		4.3.2. Założenia projektowe
+
+Przegląd literatury / Stan wiedzy
+	5.1. Mobilne przewodniki turystyczne
+		5.1.1. Historia i rozwój
+		5.1.2. Przegląd istniejących rozwiązań
+	5.2. Społeczne aspekty turystyki
+		5.2.1. Rola mediów społecznościowych	
+	5.2.2. Integracja społeczności w aplikacjach turystycznych
+
+Metodologia
+	6.1. Metody zbierania danych
+	6.2. Analiza i interpretacja wyników
+	6.3. Wybór technologii
+		6.2.1. Kryteria wyboru
+		6.2.2. Uzasadnienie wyboru platformy i narzędzi
+
+Opis projektu / Realizacja projektu
+	7.1. Architektura systemu
+		7.1.1. Schemat ogólny
+		7.1.2. Komponenty systemu
+	7.2. Interfejs użytkownika
+		7.2.1. Projektowanie UX/UI
+		7.2.2. Prototypowanie i testy użytkowe
+	7.3. Implementacja funkcjonalności
+		7.3.1. Wyświetlanie lokalizacji i atrakcji
+		7.3.2. Społeczne funkcje aplikacji
+
+Wyniki
+	8.1. Ocena funkcjonalności aplikacji
+		8.1.1. Testy z użytkownikami
+		8.1.2. Analiza feedbacku użytkowników
+	8.2. Analiza wydajności
+		8.2.1. Testy wydajnościowe
+		8.2.2. Optymalizacja
+
+Dyskusja / Analiza wyników
+	9.1. Porównanie z celami pracy
+		9.1.1. Ocena osiągnięcia celów
+		9.1.2. Dyskusja nad rozbieżnościami
+	9.2. Implikacje dla przyszłych rozwojów
+		9.2.1. Potencjalne usprawnienia
+		9.2.2. Nowe kierunki badań
+
+Wnioski i zalecenia
+	10.1. Podsumowanie głównych wniosków
+	10.2. Zalecenia dla przyszłego rozwoju projektu
+
+Bibliografia / Literatura
+
+Dodatek / Załączniki
+	12.1. Kod źródłowy aplikacji
+	12.2. Zrzuty ekranu interfejsu użytkownika
+	12.3. Ankiety i wyniki badań użytkowników

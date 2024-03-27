@@ -57,24 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\1876324a6e95df0bfa125696ebc2967b\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-km\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "144",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "63",
-                        "startColumns": "4",
-                        "startOffsets": "6098",
-                        "endColumns": "148",
-                        "endOffsets": "6242"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\edd0bcb7a2fe227095ba75fab11b56cd\\transformed\\jetified-play-services-base-18.0.1\\res\\values-km\\values.xml",
+                    "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\4691f49eb435ee65a3c1d674adfacd39\\transformed\\jetified-play-services-base-18.1.0\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -88,6 +71,23 @@
                         "startOffsets": "5099,5201,5356,5477,5582,5744,5868,5989,6247,6405,6522,6693,6818,6963,7121,7185,7243",
                         "endColumns": "101,154,120,104,161,123,120,108,157,116,170,124,144,157,63,57,76",
                         "endOffsets": "5196,5351,5472,5577,5739,5863,5984,6093,6400,6517,6688,6813,6958,7116,7180,7238,7315"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\socha\\.gradle\\caches\\transforms-3\\ad3c527e7196e946931599a7f9b8f9f9\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-km\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "144",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "63",
+                        "startColumns": "4",
+                        "startOffsets": "6098",
+                        "endColumns": "148",
+                        "endOffsets": "6242"
                     }
                 },
                 {

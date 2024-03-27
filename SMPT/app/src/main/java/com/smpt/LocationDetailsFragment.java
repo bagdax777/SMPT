@@ -1,5 +1,6 @@
 package com.smpt;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -61,6 +62,8 @@ public class LocationDetailsFragment extends Fragment {
         if (getArguments() != null) {
             mPlace = getArguments().getParcelable("place");
         }
+
+
     }
 
     @Nullable
@@ -91,6 +94,7 @@ public class LocationDetailsFragment extends Fragment {
                 moreButton.setText("więcej");
             }
         });
+
 
         textToSpeech = new TextToSpeech(getContext(), status -> {
             if (status == TextToSpeech.SUCCESS) {

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Register"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:padding="25dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_profil_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Back" />
+        <Space
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"></Space>
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logout"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Logout"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="user_email"/>
+
+        <TextView
+            android:id="@+id/punkty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/opis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/profileDescriptionEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Opis profilu"
+            android:textSize="15dp"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:maxLength="250"
+            android:visibility="gone"
+            android:padding="8dp"/>
+
+
+        <ImageView
+            android:id="@+id/editProfileDescriptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/confirmProfileDescriptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_accept"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -9,11 +9,14 @@ color white
 drawable baseline_arrow_back_ios_new_24
 drawable button_green_rounded
 drawable green_circle
+drawable ic_accept
+drawable ic_edit
 drawable ic_email
 drawable ic_email_padding
 drawable ic_headset
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable ic_map
 drawable ic_odkrywaj
 drawable ic_password
@@ -26,12 +29,14 @@ id addressTextView
 id btnForgotPasswordBack
 id btnReset
 id btn_login
-id btn_logout
+id btn_profil_back
 id btn_register
 id btn_register_back
+id confirmProfileDescriptionButton
 id customBottomNav
 id custom_bottom_navigation
 id details_container
+id editProfileDescriptionButton
 id edtForgotPasswordEmail
 id email
 id forgetPasswordProgressbar
@@ -41,6 +46,7 @@ id fullScreenImageView
 id imageView
 id imagesViewPager
 id loginNow
+id logout
 id main_container
 id main_layout
 id map
@@ -50,8 +56,12 @@ id menu_profil
 id menu_szukaj
 id menu_ulubione
 id nameTextView
+id opis
 id password
+id profileDescriptionEdit
+id profile_pic
 id progressBar
+id punkty
 id registerNow
 id scrollView
 id showMoreButton
@@ -59,6 +69,7 @@ id speakButton
 id textView
 id textView2
 id textView4
+id user_email
 id viewExpYear
 layout activity_forgot_password
 layout activity_login
@@ -67,6 +78,7 @@ layout activity_register
 layout custom_navigation_bar
 layout fragment_full_screen_image
 layout fragment_location_details
+layout fragment_profil
 layout image_item
 mipmap ic_launcher
 mipmap ic_launcher_round

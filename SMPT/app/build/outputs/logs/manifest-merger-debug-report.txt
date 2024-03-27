@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:17:1-75:12
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\socha\.gradle\caches\transforms-3\415d415b7b72586074ed83f107053afd\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\socha\.gradle\caches\transforms-3\8d7cf59cad2630db53fe3b811c586dc6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -35,15 +36,16 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\socha\.gradle\caches
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\socha\.gradle\caches\transforms-3\d994114b40907a9a364505b1d88c0f77\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\socha\.gradle\caches\transforms-3\12ce8cf77378ae905c91bd60f7fe1bef\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\socha\.gradle\caches\transforms-3\479d6f5bbd775641e298d926e7ae43d9\transformed\jetified-integrity-1.2.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\socha\.gradle\caches\transforms-3\daf5277bb1c9ecb4d26e7444ba37794c\transformed\jetified-firebase-appcheck-interop-17.0.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6a1fbaa443d794ce42fe55a6198e386e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\53168293e514b35f52a182154a591a15\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\socha\.gradle\caches\transforms-3\688065e8f0c670f28d95982b40089c86\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\a6bdab6bd1e91f75cf83ee600e0a31a3\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6b449dcc7c115e2e35d598b88bde7470\transformed\jetified-play-services-location-20.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] C:\Users\socha\.gradle\caches\transforms-3\02ef36f14e905649da5cbd271ad65d47\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.runtime:runtime-android:1.5.0] C:\Users\socha\.gradle\caches\transforms-3\e7e60c5220669774c86eb4f37b9c45c3\transformed\jetified-runtime-release\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\socha\.gradle\caches\transforms-3\5e83103d6bcf75e01241f227aca0e80e\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\76f5ed3e26729ae1a91f45fe4be68a1f\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\socha\.gradle\caches\transforms-3\f813e89c8f2393ca62e6909d88ad77e9\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.1] C:\Users\socha\.gradle\caches\transforms-3\1b455de506ea84f418de912cad668a57\transformed\jetified-activity-1.8.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-compose:1.8.1] C:\Users\socha\.gradle\caches\transforms-3\3091f57b187d3c6c117a7a0395a2f24c\transformed\jetified-activity-compose-1.8.1\AndroidManifest.xml:2:1-7:12
@@ -123,6 +125,8 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.libraries.places:places:3.3.0] C:\Users\socha\.gradle\caches\transforms-3\4353e0d96d7b6e50d95d852432b57f81\transformed\jetified-places-3.3.0\AndroidManifest.xml:12:5-67
 MERGED from [com.google.android.libraries.places:places:3.3.0] C:\Users\socha\.gradle\caches\transforms-3\4353e0d96d7b6e50d95d852432b57f81\transformed\jetified-places-3.3.0\AndroidManifest.xml:12:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\socha\.gradle\caches\transforms-3\0c0af436312eef190bba9b5c0a30c562\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
@@ -133,11 +137,29 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Us
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\socha\.gradle\caches\transforms-3\55453cb14fe7dec050912f51b49cfa6f\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
 	android:name
 		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:7:22-64
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:8:5-74
+	android:name
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:8:19-71
+uses-feature#android.hardware.sensor.compass
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:9:19-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:12:22-78
 application
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:9:5-41:19
-INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:9:5-41:19
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:14:5-46:19
+INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:14:5-46:19
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:25:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\socha\.gradle\caches\transforms-3\415d415b7b72586074ed83f107053afd\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
@@ -156,20 +178,20 @@ MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\socha\.gradle\cach
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\socha\.gradle\caches\transforms-3\582f46175181a9b1181c977c4d682fed\transformed\jetified-glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\socha\.gradle\caches\transforms-3\479d6f5bbd775641e298d926e7ae43d9\transformed\jetified-integrity-1.2.0\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\socha\.gradle\caches\transforms-3\479d6f5bbd775641e298d926e7ae43d9\transformed\jetified-integrity-1.2.0\AndroidManifest.xml:5:5-6:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\socha\.gradle\caches\transforms-3\daf5277bb1c9ecb4d26e7444ba37794c\transformed\jetified-firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\socha\.gradle\caches\transforms-3\daf5277bb1c9ecb4d26e7444ba37794c\transformed\jetified-firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6a1fbaa443d794ce42fe55a6198e386e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6a1fbaa443d794ce42fe55a6198e386e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\53168293e514b35f52a182154a591a15\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:22:5-39:19
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\53168293e514b35f52a182154a591a15\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\socha\.gradle\caches\transforms-3\688065e8f0c670f28d95982b40089c86\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\socha\.gradle\caches\transforms-3\688065e8f0c670f28d95982b40089c86\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6b449dcc7c115e2e35d598b88bde7470\transformed\jetified-play-services-location-20.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6b449dcc7c115e2e35d598b88bde7470\transformed\jetified-play-services-location-20.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\socha\.gradle\caches\transforms-3\5e83103d6bcf75e01241f227aca0e80e\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\socha\.gradle\caches\transforms-3\5e83103d6bcf75e01241f227aca0e80e\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\76f5ed3e26729ae1a91f45fe4be68a1f\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\76f5ed3e26729ae1a91f45fe4be68a1f\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\socha\.gradle\caches\transforms-3\51ff3aeecb98e3d6e8ca11491c88e923\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\socha\.gradle\caches\transforms-3\51ff3aeecb98e3d6e8ca11491c88e923\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\socha\.gradle\caches\transforms-3\71771dccce58a1eb1814075a04e64b9e\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
@@ -195,69 +217,71 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\socha\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\socha\.gradle\caches\transforms-3\3e6a839ae70931f2e648cff101ea4617\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:19:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:17:9-54
 	android:roundIcon
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:20:9-54
 	tools:targetApi
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:18:9-29
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:23:9-29
 	android:icon
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:17:9-42
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:22:9-42
 	android:dataExtractionRules
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:11:9-65
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:16:9-65
 activity#com.smpt.ForgotPasswordActivity
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:19:9-21:40
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:20:13-51
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:25:13-51
 activity#com.smpt.Register
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:22:9-24:48
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:27:9-29:48
 	android:exported
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:24:13-36
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:23:13-37
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:28:13-37
 activity#com.smpt.Login
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:30:9-38:20
 	android:exported
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:26:13-34
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:31:13-34
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:33:13-37:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:36:17-77
 	android:name
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:36:27-74
 activity#com.smpt.MainActivity
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:34:9-36:48
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:39:9-41:48
 	android:exported
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:36:13-36
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:35:13-41
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:40:13-41
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:38:9-40:54
+ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:43:9-45:54
 	android:value
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:40:13-51
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:45:13-51
 	android:name
-		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:39:13-58
+		ADDED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml:44:13-58
 uses-sdk
 INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:21:5-23:64
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\socha\.gradle\caches\transforms-3\415d415b7b72586074ed83f107053afd\transformed\material-1.9.0\AndroidManifest.xml:20:5-22:41
@@ -318,24 +342,26 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\socha\.grad
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\socha\.gradle\caches\transforms-3\12ce8cf77378ae905c91bd60f7fe1bef\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\socha\.gradle\caches\transforms-3\479d6f5bbd775641e298d926e7ae43d9\transformed\jetified-integrity-1.2.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\socha\.gradle\caches\transforms-3\479d6f5bbd775641e298d926e7ae43d9\transformed\jetified-integrity-1.2.0\AndroidManifest.xml:4:5-44
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\socha\.gradle\caches\transforms-3\daf5277bb1c9ecb4d26e7444ba37794c\transformed\jetified-firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\socha\.gradle\caches\transforms-3\daf5277bb1c9ecb4d26e7444ba37794c\transformed\jetified-firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6a1fbaa443d794ce42fe55a6198e386e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6a1fbaa443d794ce42fe55a6198e386e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\53168293e514b35f52a182154a591a15\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:19:5-44
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\53168293e514b35f52a182154a591a15\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\socha\.gradle\caches\transforms-3\688065e8f0c670f28d95982b40089c86\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\socha\.gradle\caches\transforms-3\688065e8f0c670f28d95982b40089c86\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\a6bdab6bd1e91f75cf83ee600e0a31a3\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\a6bdab6bd1e91f75cf83ee600e0a31a3\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6b449dcc7c115e2e35d598b88bde7470\transformed\jetified-play-services-location-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:20.0.0] C:\Users\socha\.gradle\caches\transforms-3\6b449dcc7c115e2e35d598b88bde7470\transformed\jetified-play-services-location-20.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] C:\Users\socha\.gradle\caches\transforms-3\02ef36f14e905649da5cbd271ad65d47\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] C:\Users\socha\.gradle\caches\transforms-3\02ef36f14e905649da5cbd271ad65d47\transformed\jetified-runtime-saveable-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-android:1.5.0] C:\Users\socha\.gradle\caches\transforms-3\e7e60c5220669774c86eb4f37b9c45c3\transformed\jetified-runtime-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.runtime:runtime-android:1.5.0] C:\Users\socha\.gradle\caches\transforms-3\e7e60c5220669774c86eb4f37b9c45c3\transformed\jetified-runtime-release\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\socha\.gradle\caches\transforms-3\5e83103d6bcf75e01241f227aca0e80e\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\socha\.gradle\caches\transforms-3\5e83103d6bcf75e01241f227aca0e80e\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\76f5ed3e26729ae1a91f45fe4be68a1f\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\76f5ed3e26729ae1a91f45fe4be68a1f\transformed\jetified-play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\socha\.gradle\caches\transforms-3\f813e89c8f2393ca62e6909d88ad77e9\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\socha\.gradle\caches\transforms-3\f813e89c8f2393ca62e6909d88ad77e9\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.8.1] C:\Users\socha\.gradle\caches\transforms-3\1b455de506ea84f418de912cad668a57\transformed\jetified-activity-1.8.1\AndroidManifest.xml:20:5-44
@@ -450,6 +476,8 @@ MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\soch
 		INJECTED from C:\Users\socha\OneDrive\Desktop\SMPT\SMPT\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\socha\.gradle\caches\transforms-3\0c0af436312eef190bba9b5c0a30c562\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\socha\.gradle\caches\transforms-3\0c0af436312eef190bba9b5c0a30c562\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\socha\.gradle\caches\transforms-3\12ce8cf77378ae905c91bd60f7fe1bef\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:8:5-79
@@ -510,6 +538,8 @@ intent-filter#action:name:android.intent.action.VIEW+category:name:android.inten
 ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:26:9-35:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\53168293e514b35f52a182154a591a15\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:30:9-38:19
@@ -528,6 +558,18 @@ ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\cac
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\socha\.gradle\caches\transforms-3\5d9c58ded1f100fd9dab34687e703fc8\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:29:13-31:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:31:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:30:17-120
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.3.1] C:\Users\socha\.gradle\caches\transforms-3\ff9a270c6ebe5c4903ab06b51e00a97e\transformed\jetified-firebase-database-20.3.1\AndroidManifest.xml:33:17-109
 meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
 ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\e2294397bbcaa5f868079202c6a5f6be\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
 	android:value
@@ -603,21 +645,21 @@ ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\c
 	android:name
 		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\socha\.gradle\caches\transforms-3\53168293e514b35f52a182154a591a15\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\socha\.gradle\caches\transforms-3\edd0bcb7a2fe227095ba75fab11b56cd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\4691f49eb435ee65a3c1d674adfacd39\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.maps.android:android-maps-utils:2.2.0] C:\Users\socha\.gradle\caches\transforms-3\2bf97411eff7ce8eaaa5a9c876821ca1\transformed\jetified-android-maps-utils-2.2.0\AndroidManifest.xml:12:9-14:69
 MERGED from [com.google.maps.android:android-maps-utils:2.2.0] C:\Users\socha\.gradle\caches\transforms-3\2bf97411eff7ce8eaaa5a9c876821ca1\transformed\jetified-android-maps-utils-2.2.0\AndroidManifest.xml:12:9-14:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\socha\.gradle\caches\transforms-3\1876324a6e95df0bfa125696ebc2967b\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\socha\.gradle\caches\transforms-3\ad3c527e7196e946931599a7f9b8f9f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\socha\.gradle\caches\transforms-3\51ff3aeecb98e3d6e8ca11491c88e923\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\socha\.gradle\caches\transforms-3\71771dccce58a1eb1814075a04e64b9e\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
